@@ -3,9 +3,7 @@ Pod::Spec.new do |s|
   s.version   = '3.3.16'
   s.summary   = "MobileVLCKit is an Objective-C wrapper for libvlc's external interface on iOS."
   s.homepage  = 'https://code.videolan.org/videolan/VLCKit'
-  s.license   = {
-    :type => 'LGPL v2.1', :file => 'COPYING.txt'
-  }
+  s.license = 'LGPL v2.1'
   s.documentation_url = 'https://wiki.videolan.org/VLCKit/'
   s.social_media_url = 'https://twitter.com/videolan'
   s.platform  = :ios
