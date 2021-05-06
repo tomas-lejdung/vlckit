@@ -3,6 +3,9 @@ Pod::Spec.new do |s|
   s.version   = '3.3.2'
   s.summary   = "MobileVLCKit is an Objective-C wrapper for libvlc's external interface on iOS."
   s.homepage  = 'https://code.videolan.org/videolan/VLCKit'
+  s.license   = {
+    :type => 'LGPL v2.1', :file => 'COPYING.txt'
+  }
   s.documentation_url = 'https://wiki.videolan.org/VLCKit/'
   s.social_media_url = 'https://twitter.com/videolan'
   s.platform  = :ios
@@ -18,8 +21,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'QuartzCore', 'CoreText', 'AVFoundation', 'Security', 'CFNetwork', 'AudioToolbox', 'OpenGLES', 'CoreGraphics', 'VideoToolbox', 'CoreMedia'
   s.libraries = 'c++', 'xml2', 'z', 'bz2', 'iconv'
   s.requires_arc = false
-  s.xcconfig = {
-    'CLANG_CXX_LANGUAGE_STANDARD' => 'c++14',
+  s.pod_target_xcconfig = {
+    'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
     'CLANG_CXX_LIBRARY' => 'libc++'
   }
 end
